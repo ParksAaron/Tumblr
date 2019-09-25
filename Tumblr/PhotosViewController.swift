@@ -46,7 +46,6 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
                 print(error.localizedDescription)
             } else if let data = data,
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                print(dataDictionary)
                 // Get the dictionary from the response key
                 let responseDictionary = dataDictionary["response"] as! [String: Any]
                 // Store the returned array of dictionaries in our posts property
@@ -60,14 +59,19 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let vc = segue.destination as! PhotoDetailsViewController
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let post = posts[indexPath.row]
+        if let photos = post["photos"] as? [[String: Any]]{
+            let photo = photos[0]
+            let originalSize = photo["original_size"] as! [String: Any]
+            let urlString = originalSize["url"] as! String
+            let url = URL(string: urlString)
+            vc.photoUrl = url
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
 
 }

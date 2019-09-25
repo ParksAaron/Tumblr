@@ -2,7 +2,62 @@
 
 **Tumblr** is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
-📝 `NOTE - PASTE PART 2 SNIPPET HERE:` Paste the README template for part 2 of this assignment here at the top. This will show a history of your development process, which users stories you completed and how your app looked and functioned at each step.
+# Add this to top of exsiting Tumblr README
+# Lab 2 - *Tumblr-Details Screen*
+
+**Tumblr** is a photo browsing app app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
+
+Time spent: **x** hours spent in total
+
+## User Stories
+
+The following **required** user stories are complete:
+
+- [x] User can tab an image to view a larger image in a detail view (5pts)
+
+The following **stretch** user stories are implemented:
+
+- [ ] Add Avatar and Publish Dates (+2pt)
+- [ ] Zoomable Photo View (+2pt)
+- [ ] Infinite Scrolling (+2pt)
+
+The following **additional** user stories are implemented:
+
+- [x] List anything else that you can get done to improve the app functionality! (+1-3pts)
+To improve the app's functionality a search bar or a way to filter results from different tumblr accounts could be implemented. A sign in option to view your own tumblr feed would also greatly improve the functionality of the app.
+
+Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
+I would like to discuss the api calls further with my peers as well as how to pass values between screens. Although I was able to complete the assignment, this is where I struggled the most.
+
+
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='tumblrdemo2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+## Notes
+
+Updating the date label
+
+## License
+
+Copyright [2019] [YOUR NAME]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
 
 ##Tumblr Part 1
